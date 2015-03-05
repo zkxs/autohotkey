@@ -38,7 +38,7 @@ return
 CoordMode, Mouse, Relative
 SetKeyDelay, 10
 ;MouseGetPos, xpos, ypos
-xpos=462
+xpos=480
 ypos=256
 buttonxpos=1144
 buttonypos=380
@@ -57,10 +57,8 @@ Sleep, 2000
 
 ; Type the userstyle
 MouseClick, Left, %xpos%, %ypos%, 1, 0
-Send, chrome-extension://fjnbnpbmkenffdnngjfgmeleoegfcffe/manage.html{Enter}
+Send, chrome-extension://fjnbnpbmkenffdnngjfgmeleoegfcffe/edit.html{Enter}
 Sleep, 1000
-Send, {Tab}{Tab}{Tab}{Tab}{Enter}
-Sleep, 100
 Send, {Tab}4chan:{Space}/f/{Space}visited{Space}links
 Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}
 Send, a:visited{Space}{{}{Enter}color:{Space}{#}707{Space}{!}important;{Enter}{}}
